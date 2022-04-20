@@ -7,7 +7,7 @@ chat_logs = []
 
 st.title("文章チエック！！")
 
-st.subheader("確認したいメッセージを入力してから送信をタップしてください")
+st.subheader("確認したいメッセージを入力してから送信！！")
 
 message = st.text_input("メッセージ")
 
@@ -34,8 +34,8 @@ def generate_response():
                        message, None)
     #ans = ans_json['results'][0]['reply']
     ans = ans_json['key1']
-    chat_logs.append('対象文章: ' + message)
-    chat_logs.append('この文章では？: ' + ans)
+    chat_logs.append('対象文章　　　:　 ' + message)
+    chat_logs.append('この文章では？: 　' + ans)
     for chat_log in chat_logs:
         st.write(chat_log)
     #st.write(ans_json)
