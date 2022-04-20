@@ -35,7 +35,7 @@ def generate_response():
     ans = ans_json['results'][0]['reply']
     #ans = ans_json['results'][0]['key1']
     chat_logs.append('you: ' + message)
-    chat_logs.append('AI: ' + ans)
+    chat_logs.append('AI: ' + ans_json ) #ans)
     for chat_log in chat_logs:
         st.write(chat_log)
 
