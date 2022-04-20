@@ -5,9 +5,9 @@ apikey = "<APIキー>"
 
 chat_logs = []
 
-st.header("Fist NLP Application")
 
 
+st.title("文章チエック！！")
 
 st.subheader("確認したいメッセージを入力してから送信！！")
 
