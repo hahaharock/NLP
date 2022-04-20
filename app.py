@@ -32,7 +32,7 @@ def generate_response():
     #apikey, message, None)
     ans_json = send_pya3rt('http://51f9-35-233-238-146.ngrok.io/Check',
                        message, None)
-    ans = ans_json['results'][0]['reply']
+    #ans = ans_json['results'][0]['reply']
     #ans = ans_json['results'][0]['key1']
     chat_logs.append('you: ' + message)
     chat_logs.append('AI: ' + ans_json ) #ans)
