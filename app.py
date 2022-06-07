@@ -32,7 +32,7 @@ def generate_response():
   
     #ans_json = send_pya3rt('https://api.a3rt.recruit.co.jp/talk/v1/smalltalk',
     #apikey, message, None)
-    ans_json = send_pya3rt('http://e57a-35-230-98-237.ngrok.io/Check',
+    ans_json = send_pya3rt('http://52.3.232.220:8000/Check',
                        message, None)
     #ans = ans_json['results'][0]['reply']
     ans = ans_json['key1']
