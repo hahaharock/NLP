@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import json
 
 apikey = "<APIキー>"
 
@@ -15,6 +16,21 @@ message = st.text_input("メッセージ")
 
 
 def send_pya3rt(endpoint, text, callback): # apikey, text, callback):
+    data = {
+        "text": "string",
+        "key1": text,
+    }
+    
+    if callback is not None:
+        params['callback'] = callback
+        
+    url = "https://proofreading.interlab-api.com:8000/Proof"
+    headers = {"Content-Type": "application/json"}
+    res = requests.post(url, headers=headers, data=json.dumps(data))
+
+    return res.json()
+
+def send_pya3rt_old(endpoint, text, callback): # apikey, text, callback):
     params = {#'apikey': apikey,
               #'query': text,
               'key1': text,
