@@ -24,7 +24,7 @@ def send_pya3rt(endpoint, text, callback): # apikey, text, callback):
     if callback is not None:
         params['callback'] = callback
         
-    url = "https://www.interlab-api.com:8001/"
+    url = "https://www.interlab-api.com:8001/Proof"
     headers = {"Content-Type": "application/json"}
     res = requests.post(url, headers=headers, data=json.dumps(data))
 
