@@ -51,8 +51,8 @@ def generate_response():
     ans_json = send_pya3rt('http://ec2-44-205-107-207.compute-1.amazonaws.com:8000/Check',
                        message, None)
     #ans = ans_json['results'][0]['reply']
-    #ans = ans_json['result']
-    ans = ans_json['key1']
+    ans = ans_json['result']
+    #ans = ans_json['key1']
     chat_logs.append('対象文章　　　:　 ' + message)
     chat_logs.append('この文章では？: 　' + ans)
     for chat_log in chat_logs:
